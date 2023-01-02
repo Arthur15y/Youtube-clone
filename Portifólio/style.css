@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    margin-top: -3.5%;
+    margin-left: 1%;
+}
+
+header {
+    width: 99.9%;
+}
+
+.logo img {
+    width: 100px;
+    position: relative;
+    top: -110px;
+    left: 80px;
+}
+
+header input {
+    width: 500px;
+    height: 37px;
+    position: relative;
+    top: -163px;
+    left: 600px;
+    border-left: hidden !important;
+    border: 1px solid rgb(208, 207, 207);
+}
+
+header .lupa {
+    width: 40px;
+    height: 37px;
+    border: 1px solid rgb(208, 207, 207);
+    background-color: rgb(246, 245, 245);
+    position: relative;
+    top: -202px;
+    left: 1120px;
+}
+
+header .lupa img {
+    position: relative;
+    top: -37px;
+    left: 40px;
+}
+
+header .camera {
+    width: 35px;
+    position: relative;
+    top: -315px;
+    left: 1670px;
+}
+
+header .bell {
+    position: relative;
+    top: -510px;
+    left: -130px;
+    float: right;
+}
+
+header .user {
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 100%;
+    float: right;
+    position: relative;
+    top: -435px;
+    margin-right: 40px;
+}
+
+header .linha {
+    width: 99.9%;
+    position: relative;
+    top: -550px;
+}
+
+header .linha2 {
+    width: 99.9%;
+    position: relative;
+    top: -500px;
+}
+
+header nav ul {
+    position: relative;
+    top: -530px;
+    margin-left: 100px;
+}
+
+header nav ul li {
+    width: auto;
+    height: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: rgb(235, 234, 234);
+    margin-left: 10px;
+}
+
+header nav ul li:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header .barra-de-pesquisa {
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width:1900px) {
+    header .camera {
+        position: relative;
+        top: -315px;
+        left: 1570px;
+    }
+}
+
+@media screen and (max-width:1766px) {
+    header .camera {
+        position: relative;
+        top: -315px;
+        left: 1470px;
+    }
+}
+
+@media screen and (max-width:1664px) {
+    header .camera {
+        position: relative;
+        top: -315px;
+        left: 1370px;
+    }
+}
+
+@media screen and (max-width:1566px) {
+    header .camera {
+        position: relative;
+        top: -315px;
+        left: 1270px;
+    }
+}
+
+@media screen and (max-width:1470px) {
+    header .camera {
+        position: relative;
+        top: -315px;
+        left: 1200px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .barra-de-pesquisa {
+        position: relative !important;
+        left: -500px !important;
+    }
+    header .camera {
+        position: relative;
+        top: -315px;
+        left: 1100px;
+    }
+}
+
+
+/*header end*/
+
+
+/*main start*/
+
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem 1rem;
+    padding: 3rem 0;
+    margin: 0 1.5rem;
+    border: 4px solid #ccc;
+}
+
+.video-section:first-child {
+    border-top: none;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    position: relative;
+    display: flex;
+}
+
+.thumbnail::before {
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .9em;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #aaa;
+}
+
+.video-bottom-section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.channel-icon {
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #aaa;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: rgba(24, 23, 23);
+}
+
+.video-channel-name {
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+}
+
+.video-channel-name:hover {
+    color: #111;
+}
+
+.video-channel-name,
+.video-metadata {
+    color: #555;
+}
+
+.video-section-title {
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.video-section-title-close {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.videos {
+    position: relative;
+    top: -500px;
+    background-color: #F9F9F9;
+}
+
+
+/*main end*/
